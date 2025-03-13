@@ -253,4 +253,4 @@ describe("GET /", () => {
 
   This runs your unit tests using Jest.
 
-By following these steps, you have set up a Node.js project with Express and TypeScript, incorporating ESLint for code linting, Prettier for code formatting, and Jest for unit testing. This setup promotes a clean, maintainable, and well-tested codebase. 
+By following these steps, you can set up a Node.js project with Express and TypeScript, incorporating ESLint for code linting, Prettier for code formatting, and Jest for unit testing. This setup promotes a clean, maintainable, and well-tested codebase. 
