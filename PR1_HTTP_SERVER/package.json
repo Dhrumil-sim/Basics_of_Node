@@ -1,0 +1,17 @@
+{
+  "name": "pr1_http_server",
+  "version": "1.0.0",
+  "description": "its a basic project to create simple http server",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsdoc": "^4.0.4"
+  },
+  "devDependencies": {
+    "docdash": "^2.0.2"
+  }
+}
