@@ -1,30 +1,13 @@
-import http from "http";
-import { hostname } from "os";
-import { URL } from "url";
-const hotname = '127.0.0.1';
-const PORT =    3000;
+// index.js
 
-const server = http.createServer((req,res)=>{
+import HttpServer from './HttpServer.js';
 
-    const parsedUrl = new URL(req.url, `http://${hostname}:${PORT}`);
-    const path = parsedUrl.pathname;
-   res.statusCode = 200;
-   res.setHeader('Content-type','application/json');
-    
-   switch(path)
-   {
-     case '/':
-        res.statusCode = 200;
-        res.end(JSON.stringify({message: 'Welcome'}));
-        break;
-     case '/books':
-        res.statusCode= 200;
-        res.end(JSON.stringify({message: 'List of books'}))
-   }
-});
+/**
+ * Initializes and starts the HTTP server.
+ */
+function initServer() {
+  const server = new HttpServer('127.0.0.1', 3000);
+  server.start();
+}
 
-server.listen(PORT,hotname,()=>{
-  console.log(`Server is running on port http://${hotname}:${PORT}`);
-
-});
-
+initServer();
